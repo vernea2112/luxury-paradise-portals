@@ -1,15 +1,15 @@
 import { Wifi, Waves, Wind, Coffee, Bath, Users, ChevronRight } from "lucide-react";
-import room1 from "@/assets/room-1.jpg";
-import room2 from "@/assets/room-2.jpg";
-import room3 from "@/assets/room-3.jpg";
+import img1 from "@/assets/resort-pool-lounge.jpg.asset.json";
+import img2 from "@/assets/resort-pool-dolphin.jpg.asset.json";
+import img3 from "@/assets/resort-poolside.jpg.asset.json";
 
 const rooms = [
   {
-    img: room1,
-    name: "Suíte Vista Oceano",
+    img: img1.url,
+    name: "Suíte Standard",
     tag: "Mais Procurada",
-    desc: "Ampla suíte com varanda privativa e vista panorâmica para o mar.",
-    price: 320,
+    desc: "Suíte confortável com acesso privilegiado à piscina e aos jardins do resort.",
+    price: 120,
     amenities: [
       { icon: Wifi, label: "Wi-Fi Premium" },
       { icon: Wind, label: "Ar Condicionado" },
@@ -18,24 +18,24 @@ const rooms = [
     ],
   },
   {
-    img: room2,
-    name: "Villa com Piscina Privada",
+    img: img2.url,
+    name: "Suíte Deluxe",
     tag: "Exclusiva",
-    desc: "Villa independente com piscina privativa, jardim tropical e serviço 24h.",
-    price: 620,
+    desc: "Suíte ampla com vista direta para a piscina principal e área lounge privada.",
+    price: 220,
     amenities: [
-      { icon: Waves, label: "Piscina Privada" },
+      { icon: Waves, label: "Vista Piscina" },
       { icon: Wifi, label: "Wi-Fi Premium" },
       { icon: Bath, label: "Banheira spa" },
-      { icon: Users, label: "4 hóspedes" },
+      { icon: Users, label: "3 hóspedes" },
     ],
   },
   {
-    img: room3,
-    name: "Villa Familiar Deluxe",
+    img: img3.url,
+    name: "Villa Familiar",
     tag: "Ideal p/ famílias",
-    desc: "Dois quartos amplos, sala de estar e terraço com vista para os jardins.",
-    price: 480,
+    desc: "Villa espaçosa com dois quartos, sala de estar e terraço envolto em vegetação.",
+    price: 320,
     amenities: [
       { icon: Users, label: "6 hóspedes" },
       { icon: Wind, label: "Ar Condicionado" },

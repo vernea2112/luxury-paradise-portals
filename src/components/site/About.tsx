@@ -1,7 +1,7 @@
 import { Waves, Leaf, Sun } from "lucide-react";
-import about1 from "@/assets/about-1.jpg";
-import about2 from "@/assets/about-2.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
+import poolLounge from "@/assets/resort-pool-lounge.jpg.asset.json";
+import poolside from "@/assets/resort-poolside.jpg.asset.json";
+import restaurant from "@/assets/resort-restaurant.jpg.asset.json";
 
 export function About() {
   return (
@@ -10,20 +10,20 @@ export function About() {
         <div className="relative">
           <div className="grid grid-cols-5 grid-rows-6 gap-4 h-[560px] lg:h-[680px]">
             <img
-              src={about1}
-              alt="Vista aérea"
+              src={poolLounge.url}
+              alt="Piscina do resort"
               loading="lazy"
               className="col-span-3 row-span-4 h-full w-full rounded-3xl object-cover shadow-elegant"
             />
             <img
-              src={about2}
-              alt="Palmeiras"
+              src={poolside.url}
+              alt="Zona de descanso"
               loading="lazy"
               className="col-span-2 row-span-3 col-start-4 row-start-2 h-full w-full rounded-3xl object-cover shadow-soft"
             />
             <img
-              src={gallery4}
-              alt="Lobby"
+              src={restaurant.url}
+              alt="Restaurante"
               loading="lazy"
               className="col-span-3 row-span-2 col-start-2 row-start-5 h-full w-full rounded-3xl object-cover shadow-soft"
             />
@@ -42,16 +42,16 @@ export function About() {
             Um <span className="text-gradient-ocean italic">paraíso</span> desenhado para os sentidos.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground lg:text-lg">
-            Aninhado entre o mar cristalino e a exuberância tropical, o Resort Paraíso do 25
-            é um convite ao descanso absoluto. Cada detalhe — do design das villas à curadoria
+            Envolvido por jardins tropicais e piscinas convidativas, o Resort Paraíso do 25
+            é um convite ao descanso absoluto. Cada detalhe — dos espaços comuns à curadoria
             gastronómica — foi pensado para transformar dias comuns em memórias eternas.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            Aqui, o luxo é discreto, o serviço é atento e o tempo passa ao ritmo das ondas.
+            Aqui, o luxo é discreto, o serviço é atento e o tempo passa ao seu ritmo.
           </p>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-3">
-            <Feature icon={<Waves className="h-5 w-5" />} title="Beira-mar" text="Praia privativa e águas turquesa." />
+            <Feature icon={<Waves className="h-5 w-5" />} title="Piscinas" text="Águas cristalinas para relaxar." />
             <Feature icon={<Sun className="h-5 w-5" />} title="Sol o ano todo" text="Clima tropical e brisas suaves." />
             <Feature icon={<Leaf className="h-5 w-5" />} title="Natureza viva" text="Jardins tropicais imersivos." />
           </div>
