@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Calendar, Users, ChevronRight } from "lucide-react";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
-import hero3 from "@/assets/hero-3.jpg";
+import pool1 from "@/assets/resort-pool-lounge.jpg.asset.json";
+import pool2 from "@/assets/resort-pool-dolphin.jpg.asset.json";
+import pool3 from "@/assets/resort-poolside.jpg.asset.json";
 
 const slides = [
-  { src: hero1, eyebrow: "Um refúgio à beira-mar", title: "Onde o oceano encontra o paraíso." },
-  { src: hero2, eyebrow: "Piscinas infinitas ao pôr do sol", title: "Momentos que ficam para sempre." },
-  { src: hero3, eyebrow: "Suítes com vista para o infinito", title: "Conforto elevado ao extraordinário." },
+  { src: pool1.url, eyebrow: "Um refúgio de tranquilidade", title: "Bem-vindo ao Paraíso do 25." },
+  { src: pool2.url, eyebrow: "Águas cristalinas e sol o ano todo", title: "Momentos que ficam para sempre." },
+  { src: pool3.url, eyebrow: "Espaços que convidam ao descanso", title: "Conforto elevado ao extraordinário." },
 ];
 
 export function Hero() {
@@ -46,8 +46,8 @@ export function Hero() {
             {slides[i].title}
           </h1>
           <p className="mt-6 max-w-xl text-base text-white/85 sm:text-lg">
-            Descubra o Resort Paraíso do 25 — uma experiência de sofisticação e serenidade
-            entre o azul do oceano e o verde tropical.
+            Descubra o Resort Paraíso do 25 — uma experiência de sofisticação, lazer e serenidade,
+            envolvida por piscinas convidativas e jardins tropicais.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
@@ -65,7 +65,6 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Slide indicators */}
         <div className="absolute bottom-40 left-6 z-20 flex gap-2 lg:left-10">
           {slides.map((_, idx) => (
             <button
@@ -80,7 +79,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Booking widget */}
       <div
         id="reservar"
         className="absolute inset-x-4 bottom-6 z-20 mx-auto max-w-5xl sm:inset-x-6 lg:bottom-10"

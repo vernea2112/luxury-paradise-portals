@@ -1,17 +1,16 @@
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
+import g1 from "@/assets/resort-pool-lounge.jpg.asset.json";
+import g2 from "@/assets/resort-pool-dolphin.jpg.asset.json";
+import g3 from "@/assets/resort-pool-guests.jpg.asset.json";
+import g4 from "@/assets/resort-poolside.jpg.asset.json";
+import g5 from "@/assets/resort-restaurant.jpg.asset.json";
 
 const imgs = [
-  { src: g1, span: "row-span-2" },
-  { src: hero1, span: "" },
-  { src: g2, span: "" },
-  { src: g4, span: "row-span-2" },
-  { src: g3, span: "" },
-  { src: hero2, span: "" },
+  { src: g1.url, span: "row-span-2" },
+  { src: g2.url, span: "" },
+  { src: g5.url, span: "" },
+  { src: g4.url, span: "row-span-2" },
+  { src: g3.url, span: "" },
+  { src: g2.url, span: "" },
 ];
 
 export function Gallery() {

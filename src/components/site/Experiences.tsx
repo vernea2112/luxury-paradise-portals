@@ -1,42 +1,42 @@
 import { useState } from "react";
-import { UtensilsCrossed, Flower2, Waves, Sailboat } from "lucide-react";
-import restaurant from "@/assets/exp-restaurant.jpg";
-import spa from "@/assets/exp-spa.jpg";
-import pool from "@/assets/exp-pool.jpg";
-import nautical from "@/assets/exp-nautical.jpg";
+import { UtensilsCrossed, Flower2, Waves, PartyPopper } from "lucide-react";
+import restaurant from "@/assets/resort-restaurant.jpg.asset.json";
+import poolside from "@/assets/resort-poolside.jpg.asset.json";
+import poolLounge from "@/assets/resort-pool-lounge.jpg.asset.json";
+import poolGuests from "@/assets/resort-pool-guests.jpg.asset.json";
 
 const tabs = [
   {
     id: "gastro",
     icon: UtensilsCrossed,
     label: "Gastronomia",
-    title: "Sabores autorais à beira-mar",
-    text: "O nosso Chef assina uma cozinha contemporânea inspirada nos frutos do mar e sabores tropicais. Uma experiência sensorial ao entardecer.",
-    img: restaurant,
+    title: "Sabores autorais ao ar livre",
+    text: "O nosso restaurante coberto acolhe momentos memoráveis, servindo pratos autorais num ambiente descontraído e sofisticado.",
+    img: restaurant.url,
   },
   {
     id: "spa",
     icon: Flower2,
-    label: "SPA & Bem-estar",
-    title: "Rituais que restauram",
-    text: "Massagens, hidroterapia e rituais holísticos num espaço envolto em silêncio, aromas naturais e luz suave.",
-    img: spa,
+    label: "Bem-estar",
+    title: "Descanso e relaxamento",
+    text: "Espaços tranquilos, jardins bem cuidados e áreas sombreadas convidam a longos momentos de descontração.",
+    img: poolside.url,
   },
   {
     id: "pool",
     icon: Waves,
     label: "Piscinas",
-    title: "Piscinas suspensas sobre o oceano",
-    text: "Piscinas de bordas infinitas, cabanas privadas e serviço de bar à beira da água, do amanhecer ao pôr do sol.",
-    img: pool,
+    title: "Piscinas para todos os momentos",
+    text: "Águas cristalinas rodeadas de zonas verdes e lounges confortáveis, do nascer ao pôr do sol.",
+    img: poolLounge.url,
   },
   {
-    id: "sea",
-    icon: Sailboat,
-    label: "Atividades Náuticas",
-    title: "Aventuras no mar turquesa",
-    text: "Passeios de catamarã, mergulho, paddle e experiências privadas ao largo de uma das mais belas costas do país.",
-    img: nautical,
+    id: "events",
+    icon: PartyPopper,
+    label: "Eventos & Lazer",
+    title: "Momentos em grupo",
+    text: "Espaços versáteis para reuniões, celebrações familiares e eventos privados junto à piscina.",
+    img: poolGuests.url,
   },
 ];
 
