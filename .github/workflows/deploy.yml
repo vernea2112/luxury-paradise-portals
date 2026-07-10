@@ -2,44 +2,42 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 'main' # ou 'master', caso a sua branch principal tenha esse nome
+    branches: [ "main" ]
 
-# Permissões necessárias para o GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
 concurrency:
-  group: 'pages'
-  cancel-in-progress: true
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps: deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build
+      - name: Build Project
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: './dist' # Nota: se o Lovable gerar a build noutra pasta (como 'build' ou '.output'), altera este caminho.
 
       - name: Deploy to GitHub Pages
         id: deployment
