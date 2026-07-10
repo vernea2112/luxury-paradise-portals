@@ -13,3 +13,7 @@ export default defineConfig({
     server: { entry: "server" },
   },
 });
+export default defineConfig({
+  base: '/luxury-paradise-portals/', // Substitua pelo nome exato do repositório
+  plugins: [react()],
+})
